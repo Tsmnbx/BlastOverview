@@ -12,7 +12,7 @@ WordCreator<-function(dataOf){
   colnames(freqD) <- names
   uUse<-unique(use)
   for (word in uUse){
-    total<-sum(str_count(use, word))
+    total<-sum(stringr::str_count(use, word))
     subdata<-data.frame(word,total)
     freqD<-rbind(freqD, subdata)
   }
