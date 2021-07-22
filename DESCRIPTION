@@ -1,0 +1,20 @@
+Package: BlastOverview
+Type: Package
+Title: OverView of BlAST Result Terms
+Version: 0.1.0
+Author: Joshua Efe
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: This package provides an overview of the terms 
+    one may find when conducting a BLAST search. It uses a wordcloud 
+    to display the words found in the discription of the results of a BLAST
+    search.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    annotate,
+    AnnotationDbi,
+    stringr,
+    wordcloud2
+RoxygenNote: 7.1.1
+Roxygen: list(markdown = TRUE)
