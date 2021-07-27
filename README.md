@@ -6,22 +6,28 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of BlastOverview is to …
+The goal of BlastOverview is to See what terms tend to pop up with your
+Blast search
 
 ## Installation
 
-You can install the released version of BlastOverview from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("BlastOverview")
-```
-
-And the development version from [GitHub](https://github.com/) with:
+The development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("Tsmnbx/BlastOverview")
+#> Downloading GitHub repo Tsmnbx/BlastOverview@HEAD
+#> Skipping 4 packages not available: Biostrings, IRanges, AnnotationDbi, annotate
+#>      checking for file ‘/private/var/folders/mh/gcs_71797dx5nslkdhs3dnw00000gn/T/RtmpQt0Vm2/remotesea7869e9dfb7/Tsmnbx-BlastOverview-2987141/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/mh/gcs_71797dx5nslkdhs3dnw00000gn/T/RtmpQt0Vm2/remotesea7869e9dfb7/Tsmnbx-BlastOverview-2987141/DESCRIPTION’
+#>   ─  preparing ‘BlastOverview’:
+#>      checking DESCRIPTION meta-information ...  ✓  checking DESCRIPTION meta-information
+#>   ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>   ─  building ‘BlastOverview_0.1.0.tar.gz’
+#>      
+#> 
+#> Installing package into '/private/var/folders/mh/gcs_71797dx5nslkdhs3dnw00000gn/T/RtmplnLaJn/temp_libpathc9605617c113'
+#> (as 'lib' is unspecified)
 ```
 
 ## Example
@@ -33,27 +39,22 @@ library(BlastOverview)
 ## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+First you have to Blast the results to Create a Data Frame of a Blast
+search
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+library(BlastOverview)
+#Here is the TakifuguRubripesChromosome12 which as a gene on Chrosome 12 of
+# a Takifugu Rubripes a type of puffer fish
+db<-Blast(TakifuguRubripesChromosome12)
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/master/examples>.
+Next you can create a wordcloud from the results
 
-You can also embed plots, for example:
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+``` r
+library(BlastOverview)
+#Here is the TakifuguRubripesChromosome12 which as a gene on Chrosome 12 of
+# a Takifugu Rubripes a type of puffer fish
+db<-Blast(TakifuguRubripesChromosome12)
+WordGraph(db)
+```
