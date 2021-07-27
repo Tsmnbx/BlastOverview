@@ -18,7 +18,7 @@ The development version from [GitHub](https://github.com/) with:
 devtools::install_github("Tsmnbx/BlastOverview")
 #> Downloading GitHub repo Tsmnbx/BlastOverview@HEAD
 #> Skipping 4 packages not available: Biostrings, IRanges, AnnotationDbi, annotate
-#>      checking for file ‘/private/var/folders/mh/gcs_71797dx5nslkdhs3dnw00000gn/T/RtmpQt0Vm2/remotesea7869e9dfb7/Tsmnbx-BlastOverview-2987141/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/mh/gcs_71797dx5nslkdhs3dnw00000gn/T/RtmpQt0Vm2/remotesea7869e9dfb7/Tsmnbx-BlastOverview-2987141/DESCRIPTION’
+#>      checking for file ‘/private/var/folders/mh/gcs_71797dx5nslkdhs3dnw00000gn/T/RtmpkVd8tf/remoteseb8838543389/Tsmnbx-BlastOverview-522f018/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/mh/gcs_71797dx5nslkdhs3dnw00000gn/T/RtmpkVd8tf/remoteseb8838543389/Tsmnbx-BlastOverview-522f018/DESCRIPTION’
 #>   ─  preparing ‘BlastOverview’:
 #>      checking DESCRIPTION meta-information ...  ✓  checking DESCRIPTION meta-information
 #>   ─  checking for LF line-endings in source and make files and shell scripts
@@ -26,7 +26,7 @@ devtools::install_github("Tsmnbx/BlastOverview")
 #>   ─  building ‘BlastOverview_0.1.0.tar.gz’
 #>      
 #> 
-#> Installing package into '/private/var/folders/mh/gcs_71797dx5nslkdhs3dnw00000gn/T/RtmplnLaJn/temp_libpathc9605617c113'
+#> Installing package into '/private/var/folders/mh/gcs_71797dx5nslkdhs3dnw00000gn/T/RtmplnLaJn/temp_libpathc9601e4f2648'
 #> (as 'lib' is unspecified)
 ```
 

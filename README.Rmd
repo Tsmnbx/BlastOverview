@@ -18,13 +18,13 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of BlastOverview is to ...
+The goal of BlastOverview is to See what terms tend to pop up with your Blast search
 
 ## Installation
 
 The development version from [GitHub](https://github.com/) with:
 
-``` r
+``` {r}
 # install.packages("devtools")
 devtools::install_github("Tsmnbx/BlastOverview")
 ```
@@ -32,13 +32,13 @@ devtools::install_github("Tsmnbx/BlastOverview")
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example}
+```{r eval=FALSE}
 library(BlastOverview)
 ## basic example code
 ```
 
 First you have to Blast the results to Create a Data Frame of a Blast search
-```{r }
+```{r eval=FALSE}
 library(BlastOverview)
 #Here is the TakifuguRubripesChromosome12 which as a gene on Chrosome 12 of
 # a Takifugu Rubripes a type of puffer fish
@@ -47,7 +47,7 @@ db<-Blast(TakifuguRubripesChromosome12)
 ```
 
 Next you can create a wordcloud from the results
-```{r }
+```{r eval=FALSE}
 library(BlastOverview)
 #Here is the TakifuguRubripesChromosome12 which as a gene on Chrosome 12 of
 # a Takifugu Rubripes a type of puffer fish
